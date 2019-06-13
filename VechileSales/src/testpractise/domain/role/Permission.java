@@ -1,0 +1,81 @@
+package com.dizzion.portal.domain.role;
+
+public enum Permission {
+    VIEW_USERS(Constants.VIEW_USERS),
+    VIEW_USER_MANAGEMENT(Constants.VIEW_USER_MANAGEMENT),
+    EDIT_USERS(Constants.EDIT_USERS),
+    VIEW_ORGANIZATION_MANAGEMENT(Constants.VIEW_ORGANIZATION_MANAGEMENT),
+    EDIT_ORGANIZATIONS(Constants.EDIT_ORGANIZATIONS),
+    VIEW_APPLICATION_MANAGEMENT(Constants.VIEW_APPLICATION_MANAGEMENT),
+    EDIT_APPLICATIONS(Constants.EDIT_APPLICATIONS),
+    VIEW_APPLICATION_GROUP_MANAGEMENT(Constants.VIEW_APPLICATION_GROUP_MANAGEMENT),
+    EDIT_APPLICATION_GROUPS(Constants.EDIT_APPLICATION_GROUPS),
+    VIEW_NOTIFICATION_MANAGEMENT(Constants.VIEW_NOTIFICATION_MANAGEMENT),
+    EDIT_NOTIFICATIONS(Constants.EDIT_NOTIFICATIONS),
+    VIEW_MAINTENANCE_EVENTS(Constants.VIEW_MAINTENANCE_EVENTS),
+    VIEW_MAINTENANCE_EVENT_MANAGEMENT(Constants.VIEW_MAINTENANCE_EVENT_MANAGEMENT),
+    EDIT_MAINTENANCE_EVENTS(Constants.EDIT_MAINTENANCE_EVENTS),
+    VIEW_STATISTICS(Constants.VIEW_STATISTICS),
+    CHANGE_SCOPE(Constants.CHANGE_SCOPE),
+    VIEW_ANNOUNCEMENT_MANAGEMENT(Constants.VIEW_ANNOUNCEMENT_MANAGEMENT),
+    EDIT_ANNOUNCEMENTS(Constants.EDIT_ANNOUNCEMENTS),
+    VIEW_ORGANIZATION_GROUP_MANAGEMENT(Constants.VIEW_ORGANIZATION_GROUP_MANAGEMENT),
+    EDIT_ORGANIZATION_GROUPS(Constants.EDIT_ORGANIZATION_GROUPS),
+    VIEW_APPLICATIONS(Constants.VIEW_APPLICATIONS),
+    VIEW_NOTIFICATIONS(Constants.VIEW_NOTIFICATIONS),
+    VIEW_APPLICATION_GROUPS(Constants.VIEW_APPLICATION_GROUPS),
+    VIEW_ANNOUNCEMENTS(Constants.VIEW_ANNOUNCEMENTS),
+    EMERGENCY_COMMUNICATION(Constants.EMERGENCY_COMMUNICATION),
+    DIZZION_TEAMS_MANAGEMENT(Constants.DIZZION_TEAMS_MANAGEMENT),
+    VIEW_TICKETS(Constants.VIEW_TICKETS),
+    EDIT_TICKETS(Constants.EDIT_TICKETS),
+    ROLE_MANAGEMENT(Constants.ROLE_MANAGEMENT),
+    MONITORING(Constants.MONITORING);
+
+    private String constant;
+
+    Permission(String constant) {
+        this.constant = constant;
+    }
+
+    @Override
+    public String toString() {
+        return constant;
+    }
+
+    public static final class Constants {
+        public static final String VIEW_USER_MANAGEMENT = "VIEW_USER_MANAGEMENT";
+        public static final String VIEW_USERS = "VIEW_USERS";
+        public static final String EDIT_USERS = "EDIT_USERS";
+        public static final String VIEW_ORGANIZATION_MANAGEMENT = "VIEW_ORGANIZATION_MANAGEMENT";
+        public static final String EDIT_ORGANIZATIONS = "EDIT_ORGANIZATIONS";
+        public static final String VIEW_APPLICATION_MANAGEMENT = "VIEW_APPLICATION_MANAGEMENT";
+        public static final String EDIT_APPLICATIONS = "EDIT_APPLICATIONS";
+        public static final String VIEW_APPLICATION_GROUP_MANAGEMENT = "VIEW_APPLICATION_GROUP_MANAGEMENT";
+        public static final String EDIT_APPLICATION_GROUPS = "EDIT_APPLICATION_GROUPS";
+        public static final String VIEW_NOTIFICATION_MANAGEMENT = "VIEW_NOTIFICATION_MANAGEMENT";
+        public static final String EDIT_NOTIFICATIONS = "EDIT_NOTIFICATIONS";
+        public static final String VIEW_MAINTENANCE_EVENTS = "VIEW_MAINTENANCE_EVENTS";
+        public static final String VIEW_MAINTENANCE_EVENT_MANAGEMENT = "VIEW_MAINTENANCE_EVENT_MANAGEMENT";
+        public static final String EDIT_MAINTENANCE_EVENTS = "EDIT_MAINTENANCE_EVENTS";
+        public static final String VIEW_STATISTICS = "VIEW_STATISTICS";
+        public static final String CHANGE_SCOPE = "CHANGE_SCOPE";
+        public static final String VIEW_ANNOUNCEMENT_MANAGEMENT = "VIEW_ANNOUNCEMENT_MANAGEMENT";
+        public static final String EDIT_ANNOUNCEMENTS = "EDIT_ANNOUNCEMENTS";
+        public static final String VIEW_ORGANIZATION_GROUP_MANAGEMENT = "VIEW_ORGANIZATION_GROUP_MANAGEMENT";
+        public static final String EDIT_ORGANIZATION_GROUPS = "EDIT_ORGANIZATION_GROUPS";
+        public static final String VIEW_APPLICATIONS = "VIEW_APPLICATIONS";
+        public static final String VIEW_NOTIFICATIONS = "VIEW_NOTIFICATIONS";
+        public static final String VIEW_APPLICATION_GROUPS = "VIEW_APPLICATION_GROUPS";
+        public static final String VIEW_ANNOUNCEMENTS = "VIEW_ANNOUNCEMENTS";
+        public static final String EMERGENCY_COMMUNICATION = "EMERGENCY_COMMUNICATION";
+        public static final String DIZZION_TEAMS_MANAGEMENT = "DIZZION_TEAMS_MANAGEMENT";
+        public static final String VIEW_TICKETS = "VIEW_TICKETS";
+        public static final String EDIT_TICKETS = "EDIT_TICKETS";
+        public static final String ROLE_MANAGEMENT = "ROLE_MANAGEMENT";
+        public static final String MONITORING = "MONITORING";
+
+        private Constants() {
+        }
+    }
+}
