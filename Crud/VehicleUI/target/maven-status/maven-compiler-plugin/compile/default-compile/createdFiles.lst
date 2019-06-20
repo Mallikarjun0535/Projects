@@ -1,0 +1,3 @@
+com\uivehicle\exceptions\VehicleException.class
+com\uivehicle\controller\VehicleView.class
+com\uivehicle\model\Vehicle.class

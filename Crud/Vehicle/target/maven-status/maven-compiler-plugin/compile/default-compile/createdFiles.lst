@@ -1,0 +1,6 @@
+com\vehicle\controller\VechileController.class
+com\vehicle\service\VehicleService.class
+com\vehicle\domain\VehicleEntity.class
+com\vehicle\dto\Vehicle.class
+com\vehicle\service\VechicleServiceInter.class
+com\vehicle\dao\VehicleRepoIntfce.class

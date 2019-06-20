@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.vehicle.dao.VehicleRepoIntfce">
+	<!-- <cache readOnly="true" eviction="LRU" flushInterval="300000"
+		size="2048" /> -->
+
+	<select id="getVehiclesList" resultMap="vehicleMap">
+		select Vehicle_ID,VehicleName,Site,Status,Alias,CreateDate,UpdateDate from Vehicle
+	</select>
+
+
+	<insert id="saveVehicleDetailDao" parameterType = "com.vehicle.domain.VehicleEntity">
+		insert into vehicle
+		(VehicleName,Site,Status,Alias,CreateDate,UpdateDate)
+		values
+		(#{vehiclename},#{manfaturingSite},#{status},#{alias},#{createDate},#{updateDate});
+	</insert> 
+
+
+	<resultMap id="vehicleMap" type="com.vehicle.domain.VehicleEntity">
+		<result property="vehicleId" column="Vehicle_ID" />
+		<result property="vehiclename" column="VehicleName" />
+		<result property="manfaturingSite" column="Site" />
+		<result property="status" column="Status" />
+		<result property="alias" column="Alias" />
+		<result property="createDate" column="CreateDate" />
+		<result property="updateDate" column="UpdateDate" />
+	</resultMap>
+
+</mapper>
