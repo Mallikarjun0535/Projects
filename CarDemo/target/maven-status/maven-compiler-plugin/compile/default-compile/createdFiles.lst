@@ -1,0 +1,8 @@
+com\cardemo\controller\Carcontroller.class
+com\cardemo\controller\RestApplication.class
+com\cardemo\dto\CarDto.class
+com\cardemo\dao\CarsDao.class
+com\cardemo\dao\CarsDaoImpl.class
+com\cardemo\service\Carservice.class
+com\cardemo\entities\Car.class
+com\cardemo\service\CarserviceLocal.class
