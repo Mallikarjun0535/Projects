@@ -8,7 +8,7 @@
 	<name>VehicleUI Maven Webapp</name>
 	<url>http://maven.apache.org</url>
 	<properties>
-		<spring-version>4.2.5.RELEASE</spring-version>
+		<spring-version>5.2.22.RELEASE</spring-version>
 		<jackson-version>2.7.2</jackson-version>
 		<springfox-version>2.4.0</springfox-version>
 		<java.version>1.8</java.version>
